@@ -6,9 +6,15 @@ This currently only supports working with basic HTTP and ping checks.
 
 This supports Pingdom API v3.1: [API reference docs](https://docs.pingdom.com/api/)
 
+## Why
+
+This project was forked from [terraform-provider-pingdom](https://github.com/russellcardullo/terraform-provider-pingdom) because the original project lacks builds for ARM64 Darwin. Since more and more people at Algolia uses Mac M1, we needed a build for M1.
+
+The repository is public since terraform requires it for the provider to be published on the terraform repository. Internal documentation can be found on Confluence. 
+
 ## Requirements ##
-* Terraform 0.12.x
-* Go 1.14 (to build the provider plugin)
+* Terraform 1.X.X
+* Go 1.18 (to build the provider plugin)
 
 ## Usage ##
 
